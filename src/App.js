@@ -1,19 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Img from './img/W.png';
+// import LoadingPage from './loding/loadingPage';
+//import LoginForm from './form/loginForm';
+import Register from "./form/register";
 
 function App() {
   return (
-			<div className='box'>
-				<div className='articlebox'>
-					<div className='textbox'>
-						<div className='logo'>
-							<img src={Img}/> 
-							<div className='text'>Wisecrypto</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		// <LoadingPage/>
+		// <LoginForm/>
+    <Register/>
   );
 }
 

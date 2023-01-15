@@ -42,7 +42,8 @@ html, body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   border: 1px solid blue;
 }
 
@@ -50,12 +51,20 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   border: 1px solid sandybrown;
-  
+  width: 269.7px;
+  height: 94.57px;
 }
 
-img {
+.logotext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
   width: 70.78px;
   height: 62.57px;
   top: 16px;
@@ -63,10 +72,49 @@ img {
 }
 
 .text {
-  width: 176.78750610351562px;
-  height: 31.14px;
-  left: 84.57598876953125px;
-  top: 55.160003662109375px;
+left: 31.36%;
+right: 3.09%;
+top: 58.33%;
+bottom: 8.75%;
   font-size: 30px;
   color: #FFFFFF;
+  align-self: flex-end;
+  padding-bottom: 11px;
+}
+
+.logotext {
+  color: white;
+  width: 269.7px;
+height: 40px;
+
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+
+align-self: stretch;
+flex-grow: 0;
+flex: none;
+order: 1;
+
+top: 106.57px;
+left: 8px;
+
+align-self: center;
+flex-wrap: wrap;
+}
+
+.loading {
+  width: 40px;
+  height: 40px;
+  top: 298.57px;
+  left: 122.85px;
+  border-radius: 2px;
+  background: #FFFFFF;
+
+  flex: none;
+order: 1;
+flex-grow: 0;
 }
