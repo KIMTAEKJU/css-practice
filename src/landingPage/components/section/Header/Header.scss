@@ -1,9 +1,25 @@
+@import '../../device.scss';
 
-img {
-    width: 1920px;
-    height: 720px;
-}
+.header {
 
-header {
-    overflow-x: hidden;
+    &__desktop-img, &__tablet-img, &__mobile-img {
+        display: none;
+    }
+
+    @include tablet {
+        &__tablet-img {
+            display: block;
+            height: 678px;
+            width: 1199px;
+        }
+    }
+
+    @include desktop {
+       &__desktop-img {
+            display: block;
+            width: 1920px;
+            height: 762px;
+       }
+    }
+
 }

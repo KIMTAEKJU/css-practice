@@ -1,14 +1,13 @@
 import React from 'react';
-import { Difficulty, Header, Instructions, Introduce, Method, Mission, Recommend, Reward, Schedule, SectionList } from '../components';
+import { Difficulty, Header, Instructions, Introduce, Method, Mission, Recommend, Reward, Schedule, SectionList, Member } from '../components';
+import './LandingPage.scss';
 
 function LandingPage() {
 
     return (
         <div className='box'>
 
-            <section className='header'>
-                <Header/>
-            </section>
+            <Header/>
 
             <SectionList/>
 
