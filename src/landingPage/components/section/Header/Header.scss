@@ -1,22 +1,27 @@
 @import '../../device.scss';
 
-.header {
+.banner {
 
-    &__desktop-img, &__tablet-img, &__mobile-img {
-        display: none;
+    // &__desktop-img, &__tablet-img, &__mobile-img {
+    //     display: none;
+    // }
+
+    @include mobile {
+        &__img {
+            width: 767px;
+            height: 655px;
+        }
     }
 
     @include tablet {
-        &__tablet-img {
-            display: block;
+        &__img {
             height: 678px;
             width: 1199px;
         }
     }
 
     @include desktop {
-       &__desktop-img {
-            display: block;
+       &__img {
             width: 1920px;
             height: 762px;
        }
