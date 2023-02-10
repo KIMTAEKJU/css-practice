@@ -1,0 +1,28 @@
+.introduce {
+  width: 1920px;
+  height: 489px;
+  padding: 120px 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background: #FFFFFF;
+}
+.introduce__title {
+  width: 305px;
+  height: 57px;
+  font-family: "Pretendard";
+  font-size: 38px;
+  line-height: 57px;
+  /* identical to box height, or 150% */
+  letter-spacing: -0.4px;
+  /* Light/Gray/$gray-900 */
+  color: #2B2D36;
+}
+.introduce__inquiry-img {
+  position: absolute;
+  width: 148px;
+  height: 58px;
+  left: 1388px;
+  top: 351px;
+}/*# sourceMappingURL=Introduce.css.map */

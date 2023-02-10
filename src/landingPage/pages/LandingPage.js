@@ -1,6 +1,8 @@
 import React from 'react';
 import { Difficulty, Header, Instructions, Introduce, Method, Mission, Recommend, Reward, Schedule, SectionList, Member } from '../components';
 import './LandingPage.scss';
+import './reset.css';
+import './font.css';
 
 function LandingPage() {
 
@@ -11,9 +13,7 @@ function LandingPage() {
 
             <SectionList/>
 
-            <section className='introduce'>
-                <Introduce/>
-            </section>
+            <Introduce/>
 
             <section className='recommend'>
                 <Recommend/>

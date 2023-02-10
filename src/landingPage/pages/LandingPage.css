@@ -6,4 +6,8 @@ html, body, #root {
 .box {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  position: relative;
+  background: #FFFFFF;
 }/*# sourceMappingURL=LandingPage.css.map */

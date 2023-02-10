@@ -5,26 +5,69 @@
     // &__desktop-img, &__tablet-img, &__mobile-img {
     //     display: none;
     // }
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    @include mobile {
-        &__img {
-            width: 767px;
-            height: 655px;
+    @include desktop {
+        width: 1920px;
+        height: 762px;
+        background-image: url('../../../assets/images/bg/PC.png');
+
+        @supports (background-image: url('../../../assets/images/bg/PC.webp')) {
+            background-image: url('../../../assets/images/bg/PC.webp')
         }
+
+        @supports (background-image: url('../../../assets/images/bg/PC.avif')) {
+            background-image: url('../../../assets/images/bg/PC.avif')
+        }
+        
+
+    //    &__img {
+    //         width: 1920px;
+    //         height: 762px;
+    //         background-image: url('../../../assets/images/bg/PC.avif');
+            
+    //    }
     }
 
     @include tablet {
-        &__img {
-            height: 678px;
-            width: 1199px;
+        width: 1199px;
+        height: 678px;
+        background-image: url('../../../assets/images/bg/Tablet.png');
+
+        @supports (background-image: url('../../../assets/images/bg/Tablet.webp')) {
+            background-image: url('../../../assets/images/bg/Tablet.webp')
         }
+
+        @supports (background-image: url('../../../assets/images/bg/Tablet.avif')) {
+            background-image: url('../../../assets/images/bg/Tablet.avif')
+        }
+
+        // &__img {
+        //     width: 1199px;
+        //     height: 678px;
+        //     background-image: url('../../../assets/images/bg/Tablet.avif');
+        // }
     }
 
-    @include desktop {
-       &__img {
-            width: 1920px;
-            height: 762px;
-       }
+    @include mobile {
+        width: 767px;
+        height: 655px;
+        background-image: url('../../../assets/images/bg/Mobile.png');
+
+        @supports (background-image: url('../../../assets/images/bg/Mobile.webp')) {
+            background-image: url('../../../assets/images/bg/Mobile.webp')
+        }
+
+        @supports (background-image: url('../../../assets/images/bg/Mobile.avif')) {
+            background-image: url('../../../assets/images/bg/Mobile.avif')
+        }
+
+        // &__img {
+        //     width: 767px;
+        //     height: 655px;
+        //     background-image: url('../../../assets/images/bg/Mobile.avif');
+        // }
     }
 
 }
